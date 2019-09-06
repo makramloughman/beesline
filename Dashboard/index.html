@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style-sidenav.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="hex.css">
+  <script src="hamburger.js" defer></script>
+  <script src="Chart.js"></script>
+	<script src="Chart.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Chart.css">
+	<link rel="stylesheet" type="text/css" href="Chart.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Icon_bee-gold.png">
+  <title>Dashboard</title>
+
+</head>
+
+<body>
+
+  <div class="sidenav">
+    <div class="inner-nav">
+      <div class="beez-w">
+        <a href="https://www.shopbeesline.com/" target="_blank"><img id="beez" src="image3.png"/></a>
+      </div>
+      <div class="hamburger" onclick="hamburgerFunction()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="welcome tmp-unvisible">
+      <img src="placeholder.png"/>
+      <div class="name-w">
+        <div class="name-h text">
+          Welcome,
+        </div>
+        <div class="name-t text">
+          <a href="#">Name Surname</a>
+        </div>
+        <form name="logoutForm" method="post" action="../index.html">
+          <button type="submit" class="btn_logout"> LOGOUT </button>
+        </form>
+      </div>
+    </div>
+    <div class="nav tmp-unvisible">
+      <div class="a">
+        <a href="../Dashboard/index.html" class="active">Dashboard</a>
+      </div>
+      <div class="a">
+        <a href="#">Analytics</a>
+      </div>
+      <div class="a">
+        <a href="../Orders_History/index.html">Orders History</a>
+      </div>
+      <div class="a">
+        <a href="../Purchase_Order_Interface/index.html">New Order</a>
+      </div>
+    </div>
+    <div class="grid">
+      <ul id="grid" class="clear">
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main-inner">
+      <input class="year-input" type="number" value="2019">
+      <button class="timescale" id="weeks" type="button">Weeks</button>
+      <button class="timescale" id="months" type="button">Months</button>
+      <canvas id="chart" class="chartjs-render-monitor"></canvas>
+    </div>
+    <footer>
+      <div class="footer">
+        Powered by <a href="http://megateklb.com/"> <img src="logo2.png" alt="logo" class="avatar"> </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

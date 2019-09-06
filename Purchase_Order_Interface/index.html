@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="style-sidenav.css">
+  <link rel="stylesheet" type="text/css" href="hex.css">
+  <script src="script.js" defer></script>
+  <script src="hamburger.js" defer></script>
+  <script src="jspdf.min.js"></script>
+  <script src="jspdf.plugin.autotable.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="Icon_bee-gold.png">
+  <title> Purchase Order Interface </title>
+
+</head>
+
+<body>
+
+  <div class="sidenav">
+    <div class="inner-nav">
+      <div class="beez-w">
+        <a href="https://www.shopbeesline.com/" target="_blank"><img id="beez" src="image3.png"/></a>
+      </div>
+      <div class="hamburger" onclick="hamburgerFunction()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="welcome tmp-unvisible">
+      <img src="placeholder.png"/>
+      <div class="name-w">
+        <div class="name-h text">
+          Welcome,
+        </div>
+        <div class="name-t text">
+          <a href="#">Name Surname</a>
+        </div>
+        <a href="../index.html">
+          <button type="submit" class="btn_logout"> LOGOUT </button>
+        </a>
+      </div>
+    </div>
+    <div class="nav tmp-unvisible">
+      <div class="a">
+        <a href="../Dashboard/index.html">Dashboard</a>
+      </div>
+      <div class="a">
+        <a href="#">Analytics</a>
+      </div>
+      <div class="a">
+        <a href="../Orders_History/index.html">Orders History</a>
+      </div>
+      <div class="a">
+        <a href="../Purchase_Order_Interface/index.html" class="active">New Order</a>
+      </div>
+    </div>
+    <div class="grid">
+      <ul id="grid" class="clear">
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="flex-container">
+  	<div class="col col-left">
+  		<div class="box box-left">
+        <div role="main" class="container content-section">
+          <!-- Items generated here-->
+        </div>
+      </div>
+  	</div>
+  	<div class="col col-right">
+  		<div class="box tmp-unvisible box-right">
+        <section class="container content-section">
+          <div class="head2">
+            <h2 class="section-header2">Order</h2>
+            <div class="cart-row-head">
+              <div class="cart-item cart-header cart-column"> <span id='button2'> <i class="arrow left tmp-unvisible2"> </i> ITEM </span> </div>
+              <div class="cart-price cart-header cart-column">PRICE</div>
+              <div class="cart-quantity cart-header cart-column">QUANTITY</div>
+            </div>
+          </div>
+          <div class="cart-items"></div> <!-- Order generated here-->
+        </section>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">SUBMIT</button>
+        <div class="summary">
+          <div class="sub-header">
+            <h3> Purchase Order Summary </h3> <span id="savestretch"> Export as <input type="button" id="btnExport" class="btn btn-pdf" value="PDF"/> </span>
+          </div>
+          <table id="my-table">
+            <thead class="POS-head">
+              <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody class="POS">
+            </tbody>
+          </table>
+        </div>
+      </div>
+  	</div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      Powered by <a href="http://megateklb.com/"> <img src="logo2.png" alt="logo" class="avatar"> </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

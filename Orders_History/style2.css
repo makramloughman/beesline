@@ -110,6 +110,10 @@ html, body {
     font-size: 1.2em;
   }
 
+  .sub-header {
+    top: 0;
+  }
+
 }
 
 @media (max-width: 1400px), (orientation: portrait) {
@@ -233,6 +237,10 @@ html, body {
 
   .cart-font {
     font-size: 1em;
+  }
+
+  .sub-header {
+    top: 60px;
   }
 
 }
@@ -538,7 +546,6 @@ tr:nth-child(even) {
 .sub-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 60px;
   background-color: rgba(255,255,255,0.95);
   margin: 0;
   display: -webkit-box;

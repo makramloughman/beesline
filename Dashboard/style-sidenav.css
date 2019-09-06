@@ -135,12 +135,6 @@ body {
     display: none;
   }
 
-  footer {
-    position: absolute;
-    right: 0;
-    padding: 1.75vh 1.75vw;
-  }
-
 }
 
 @media (max-width: 1400px), (orientation: portrait) {

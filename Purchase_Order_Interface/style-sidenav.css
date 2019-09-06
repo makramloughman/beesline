@@ -133,6 +133,12 @@ body {
   .tmp-unvisible2 {
     display: none;
   }
+  
+    footer {
+    position: absolute;
+    right: 0;
+    padding: 1.75vh 1.75vw;
+  }
 
 }
 

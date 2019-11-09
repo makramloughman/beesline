@@ -15,7 +15,7 @@
   <script src="jspdf.min.js"></script>
   <script src="jspdf.plugin.autotable.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="Icon_bee-gold.png">
-  <title> Purchase Order Interface </title>
+  <title> Orders History </title>
 
 </head>
 
@@ -48,16 +48,16 @@
     </div>
     <div class="nav tmp-unvisible">
       <div class="a">
-        <a href="../Dashboard/index.html">Dashboard</a>
+        <a href="../dashboard">Dashboard</a>
       </div>
       <div class="a">
         <a href="#">Analytics</a>
       </div>
       <div class="a">
-        <a href="../Orders_History/index.html">Orders History</a>
+        <a href="../orders-history" class="active">Orders History</a>
       </div>
       <div class="a">
-        <a href="../Purchase_Order_Interface/index.html" class="active">New Order</a>
+        <a href="../purchase-order-interface">New Order</a>
       </div>
     </div>
     <div class="grid">
@@ -125,7 +125,7 @@
           <div class="head2">
             <h2 class="section-header2">Order</h2>
             <div class="cart-row-head">
-              <div class="cart-item cart-header cart-column"> <span id='button2'> <i class="arrow left tmp-unvisible2"> </i> ITEM </span> </div>
+              <div class="cart-item cart-header cart-column"><span id='button2' class="tmp-unvisible2"> <i class="arrow left"> </i> BACK </span> &nbsp; ITEM </div>
               <div class="cart-price cart-header cart-column">PRICE</div>
               <div class="cart-quantity cart-header cart-column">QUANTITY</div>
             </div>
@@ -136,7 +136,7 @@
           <strong class="cart-total-title">Total</strong>
           <span class="cart-total-price">$0</span>
         </div>
-        <button class="btn btn-primary btn-purchase" type="button">SUBMIT</button>
+        <div class="seperator" type="button"></div>
         <div class="summary">
           <div class="sub-header">
             <h3> Purchase Order Summary </h3> <span id="savestretch"> Export as <input type="button" id="btnExport" class="btn btn-pdf" value="PDF"/> </span>

@@ -5,6 +5,7 @@
     height: -webkit-fill-available;
     align-content: space-evenly;
     -webkit-align-content: space-evenly;
+    height: inherit;
   }
 
   .main-inner {

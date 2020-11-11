@@ -2,9 +2,10 @@
 
   .grid {
     position: absolute;
-    top: 580px;
+    bottom: 0px;
     margin: -35px -25px -50px -47px;
     width: -webkit-fill-available;
+    width: -moz-available;
   }
 
 }

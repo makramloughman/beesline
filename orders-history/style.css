@@ -20,7 +20,8 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    height: -webkit-fill-available;
+    height: 100;
+    box-sizing: border-box;
   }
 
   .col-left {
@@ -37,8 +38,9 @@ body {
     -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.2);
             box-shadow: 0 2px 6px rgba(0,0,0,.2);
     border: #ccc solid 1px;
-    height: -webkit-fill-available;
+    height: 100%;
     overflow: auto;
+    box-sizing: border-box;
   }
 
   .box::-webkit-scrollbar {

@@ -117,7 +117,7 @@ function vieworderClicked() {
     var price = products[product].price;
     var quantity = orders[orderClicked].products[product]
     var cartRowContents = `<div class="cart-item cart-column">
-                             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+                             <img class="cart-item-image" src="../assets/img/${imageSrc}" width="100" height="100">
                              <span class="cart-item-title">${product}</span>
                            </div>
                            <span class="cart-price cart-font cart-column">${currencyFormat(price)}</span>

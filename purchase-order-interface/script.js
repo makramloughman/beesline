@@ -44,7 +44,7 @@ function generateItems() {
     const item = items[i];
     shop.innerHTML += `<div class="shop-row">
                          <div class="shop-item shop-column">
-                           <img class="shop-item-image" src="${products[item].img_src}">
+                           <img class="shop-item-image" src="../assets/img/${products[item].img_src}">
                            <span class="shop-item-title">${item}</span>
                          </div>
                          <span class="shop-price shop-font shop-column">${currencyFormat(products[item].price)}</span>

@@ -3,7 +3,6 @@
 body {
   font-family: Raleway;
   margin: 0;
-  background-color: #f5f5f5;
   height: 100vh;
 }
 
@@ -109,22 +108,6 @@ body {
 
   .active {
     color: white;
-  }
-
-  footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 0.25% 0.75%;
-  }
-
-  .footer {
-    display: table;
-  }
-
-  .footer img {
-    height: 18px;
-    vertical-align: middle;
   }
 
   .hambuger {
@@ -315,19 +298,6 @@ body {
 
   .tmp-unvisible {
     display: none;
-  }
-
-  footer {
-    padding: 1.75vh 1.75vw;
-  }
-
-  .footer {
-    display: table;
-  }
-
-  .footer img {
-    height: 18px;
-    vertical-align: middle;
   }
 
 }
